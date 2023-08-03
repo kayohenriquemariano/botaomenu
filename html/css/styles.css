@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(133, 223, 87, 0.73);
+}
+
+.menu {
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: 25px;
+    right: 25px;
+    float: right;
+    position: fixed;
+    cursor: pointer;
+    background: whitesmoke;
+    box-shadow:  0 0 0 0 rgba(68, 68, 68, 0.108),   0 0 0 0 rgba(72, 72, 72, 0.108);
+    transition: box-shadow 1s ease-in-out;
+}
+
+.menu:hover{
+   box-shadow:  0 0 0 8px rgba(68, 68, 68, 0.108),   0 0 0 8px rgba(72, 72, 72, 0.108);
+}
+
+.hamburgue {
+    display: block;
+    position: relative;
+    background: black;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+}
+
+.hamburgue:before,
+.hamburgue:after {
+    background: black;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburgue:before {
+    top: 10px;
+}
+
+.hamburgue:after {
+    bottom: 10px;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ label .hamburgue {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburgue:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked ~ label .hamburgue:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+
+input:checked ~ label .menu {
+    box-shadow:  0 0 0 200vw rgba(68, 68, 68, 0.108),   0 0 0 200vh rgba(0, 0, 0, 0.108);
+}
+
+input:checked ~ ul {
+   opacity: 1;
+}
+ul {
+    margin: 25px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    list-style: none;
+    opacity: 0;
+    transition: 0.25s 0.5s ease-in-out;
+}
+
+a {
+    display: block;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
