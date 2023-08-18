@@ -1,4 +1,4 @@
-*,
+ *,
 *:before,
 *:after {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background:rgba(133, 223, 87, 0.73);
+    background: rgba(133, 223, 87, 0.73);
 }
 
 .menu {
@@ -21,16 +21,16 @@ body {
     position: fixed;
     cursor: pointer;
     background: whitesmoke;
-    box-shadow:  0 0 0 0 rgba(68, 68, 68, 0.108),   0 0 0 0 rgba(72, 72, 72, 0.108);
+    box-shadow: 0 0 0 0 rgba(68, 68, 68, 0.108), 0 0 0 0 rgba(72, 72, 72, 0.108);
     transition: box-shadow 0.3s ease-in-out;
 }
 
 li:last-child a {
-    margin-bottom: 0px!important;
+    margin-bottom: 0px !important;
 }
 
-.menu:hover{
-   box-shadow:  0 0 0 8px rgba(68, 68, 68, 0.108),   0 0 0 8px rgba(72, 72, 72, 0.108);
+.menu:hover {
+    box-shadow: 0 0 0 8px rgba(68, 68, 68, 0.108), 0 0 0 8px rgba(72, 72, 72, 0.108);
 }
 
 .hamburgue {
@@ -67,28 +67,29 @@ input {
     display: none;
 }
 
-input:checked ~ label .hamburgue {
+input:checked~label .hamburgue {
     transform: rotate(45deg);
 }
 
-input:checked ~ label .hamburgue:before {
+input:checked~label .hamburgue:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-input:checked ~ label .hamburgue:after {
+input:checked~label .hamburgue:after {
     transform: rotate(90deg);
     bottom: 0;
 }
 
 
-input:checked ~ label .menu {
-    box-shadow:  0 0 0 200vw rgba(68, 68, 68, 0.108),   0 0 0 200vh rgba(0, 0, 0, 0.108);
+input:checked~label .menu {
+    box-shadow: 0 0 0 200vw rgba(68, 68, 68, 0.108), 0 0 0 200vh rgba(0, 0, 0, 0.108);
 }
 
-input:checked ~ ul {
-   opacity: 1;
+input:checked~ul {
+    opacity: 1;
 }
+
 ul {
     margin: 25px;
     position: absolute;
@@ -105,7 +106,7 @@ a {
     color: black;
     font-size: 25px;
     text-decoration: none;
-}
+} */
 
 /* cadastro cliente */
 /* * form-clientes{
